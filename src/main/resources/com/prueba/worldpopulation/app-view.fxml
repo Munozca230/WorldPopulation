@@ -3,15 +3,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="505.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prueba.worldpopulation.WorldPopulationController">
+<AnchorPane prefHeight="717.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prueba.worldpopulation.WorldPopulationController">
     <children>
-        <TableView fx:id="tableView" layoutX="14.0" layoutY="20.0" prefHeight="466.0" prefWidth="473.0">
+        <TableView fx:id="tableViewCountries" layoutX="14.0" layoutY="14.0" prefHeight="291.0" prefWidth="847.0">
             <columns>
-                <TableColumn prefWidth="131.0" text="Country">
+                <TableColumn fx:id="columnCountry" prefWidth="243.0" resizable="false" text="Country">
                 </TableColumn>
-                <TableColumn prefWidth="127.0" text="Population (2022)">
+                <TableColumn fx:id="columnPopulation2022" prefWidth="218.0" resizable="false" text="Population (2022)">
                 </TableColumn>
-                <TableColumn prefWidth="215.0" text="Average Population 1960-2022)">
+                <TableColumn fx:id="columnAvgPopulation" prefWidth="385.0" resizable="false" text="Avg Population (1960-2022)">
+                </TableColumn>
+            </columns>
+        </TableView>
+        <TableView fx:id="tableViewRegions" layoutX="14.0" layoutY="317.0" prefHeight="400.0" prefWidth="847.0">
+            <columns>
+                <TableColumn fx:id="columnRegion" editable="false" prefWidth="175.0" resizable="false" sortable="false" text="Region">
+                </TableColumn>
+                <TableColumn fx:id="columnRegionPopulation" editable="false" prefWidth="208.0" resizable="false" sortable="false" text="Population">
+                </TableColumn>
+                <TableColumn fx:id="columnRegionCountries" editable="false" maxWidth="1.7976931348623157E308" prefWidth="3500.0" resizable="false" sortable="false" text="Countries">
                 </TableColumn>
             </columns>
         </TableView>

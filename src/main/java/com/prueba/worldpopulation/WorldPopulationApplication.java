@@ -21,12 +21,13 @@ public class WorldPopulationApplication extends Application {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        ReadCSV readCSV = new ReadCSV();
-        CountryData countryData = new CountryData();
-        List<Country> countries = countryData.topCountries(readCSV.loadCSVCountrysData(readCSV.csvFilePath));
-        //List<Country> a = readCSV.loadCSVData(readCSV.csvFilePath);
-        //a.forEach(country -> System.out.println(country.getCountryCode()));
-        countries.forEach(country -> System.out.println(country));
-        //launch();
+      //  RegionData regionData = new RegionData();
+      //  CountryData countryData = new CountryData();
+      //  ReadCSV readCSV = new ReadCSV();
+      // List<Country> countryList = countryData.excludeNotACountry(readCSV.loadCSVCountrysData(readCSV.csvCountriesFilePath));
+       //List<Region> regionList = regionData.calculatePopulationRegions(countryList, readCSV.loadCSVRegionsData(readCSV.csvRegionsFilePath));
+        //regionList.forEach(System.out::println);
+        //countryList.forEach(System.out::println);
+        launch();
     }
 }
